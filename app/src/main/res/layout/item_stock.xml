@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/stockIdLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stock ID: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stockIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/stockIdLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockIdLabel" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/locationLabel"
+        app:layout_constraintTop_toTopOf="@+id/locationLabel" />
+
+    <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationLabel" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/quantityLabel"
+        app:layout_constraintTop_toTopOf="@+id/quantityLabel" />
+
+    <TextView
+        android:id="@+id/scanAtLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Scan At: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantityLabel" />
+
+    <TextView
+        android:id="@+id/scanAtTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/scanAtLabel"
+        app:layout_constraintTop_toTopOf="@+id/scanAtLabel" />
+
+    <TextView
+        android:id="@+id/createAtLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create At: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanAtLabel" />
+
+    <TextView
+        android:id="@+id/createAtTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/createAtLabel"
+        app:layout_constraintTop_toTopOf="@+id/createAtLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.globalsion.stocktake.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_stock"
+        android:name="com.globalsion.stocktake.ui.stock.StockFragment"
+        android:label="@string/menu_stocksave"
+        tools:layout="@layout/fragment_stock" />
+
+    <fragment
+        android:id="@+id/nav_stockedit"
+        android:name="com.globalsion.stocktake.ui.stockedit.StockEditFragment"
+        android:label="@string/menu_stockedit"
+        tools:layout="@layout/fragment_stockedit" />
+
+    <fragment
+        android:id="@+id/nav_stocklist"
+        android:name="com.globalsion.stocktake.ui.stocklist.StockListFragment"
+        android:label="@string/menu_stocklist"
+        tools:layout="@layout/fragment_stocklist" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.globalsion.stocktake.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
